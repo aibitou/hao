@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>搜索助手 - 爱笔头</title>
+<meta name="keywords" content="聚合搜索,多重搜索,百度搜索,360搜索,搜狗搜索,必应搜索,今日头条" />
+<meta name="description" content="爱笔头搜索助手，聚合了百度搜索、360搜索、搜狗搜索、必应搜索，能快速在多个搜索引擎切换。网址：hao.aibitou.com" />
+<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" href="http://aibitou.qiniudn.com/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="http://aibitou.qiniudn.com/static/css/index.css">
+<link rel="dns-prefetch" href="https://www.baidu.com" />
+<link rel="dns-prefetch" href="https://www.so.com" />
+<link rel="dns-prefetch" href="http://www.sogou.com" />
+<link rel="dns-prefetch" href="http://cn.bing.com" />
+<link rel="dns-prefetch" href="https://www.zhihu.com" />
+<link rel="dns-prefetch" href="http://www.toutiao.com" />
+<link rel="dns-prefetch" href="http://zhihu.sogou.com" />
+<link rel="dns-prefetch" href="http://weixin.sogou.com" />
+<script type="text/javascript" src="http://aibitou.qiniudn.com/static/js/index.js" charset="UTF-8"></script>
+<script src="http://aibitou.qiniudn.com/static/js/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>
+InstantClick.init();
+</script>
+</head>
+<body onload="setDefaultEngine()">
+<div class="nv">
+  <a href="./index.html" class="logo">
+    <img src="http://aibitou.qiniudn.com/logo.png" />
+    <!--      <li style="font-size:18px; line-height: 28px; width: 100px; text-align: right;"><a href="main.html" target="iframe" title="首页"><strong>搜索助手</strong></a></li>-->
+  </a>
+  <ul>
+    <div style="display:none">
+      <li><a href="#" id="mylink" target="iframe">搜索</a></li>
+    </div>
+    <li>
+      <input type="text" class="input" name="keyword" size="40" id="keyword" onkeypress="return captureKeys(event);" placeholder="搜索" />
+    </li>
+    <li><a href="#" id="baidu_txt" onclick="submit_query('baidu_txt')">百度</a></li>
+    <li><a href="#" id="360_txt" onclick="submit_query('360_txt')">360</a></li>
+    <li><a href="#" id="sougou_txt" onclick="submit_query('sougou_txt')">搜狗</a></li>
+    <li><a href="#" id="bing_txt" onclick="submit_query('bing_txt')">必应</a></li>
+    <li class="gap"></li>
+    <li><a href="#" id="zhihu_txt" onclick="submit_query('zhihu_txt')">知乎</a></li>
+    <li><a href="#" id="weixin_txt" onclick="submit_query('weixin_txt')">微信</a></li>
+    <li><a href="#" id="toutiao_txt" onclick="submit_query('toutiao_txt')">今日头条</a></li>
+    <li class="gap"></li>
+    <li><a href="./emoji.html" target="iframe">Emoji</a></li>
+    <!--<li><a href="#" id="biaoqing_txt" onclick="submit_query('biaoqing_txt')">表情包</a></li>-->    
+    <li><a href="./pb.html" target="_blank">在线排版beta</a></li>
+  </ul>
+  <div class="time">
+    <span><div id="jnkc" class="hide"></div></span>
+  </div>
+</div>
+<iframe src="main.html" name="iframe" frameborder="0" width="100%" height="95%" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock"></iframe>
+<script>
+setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 周'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e29cabdf029fd6a5a3b9b99aaf384434";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

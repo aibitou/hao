@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表情包 - 爱笔头</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://aibitou.qiniudn.com/static/css/emoji.css">
+
+<!-- <style>
+img { max-width: 80px; max-height: 80px; }
+#q { width: 100%; margin: 10px; }
+a { width: 80px; height: 80px; margin: 5px 5px;}
+.search {
+  height: 24px;
+  width: 252px;
+  margin: 2px 10px;
+}
+</style> -->
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script>
+$(function() {
+    $('#q').on('input', function() {
+        if ($('#q').val() != '') {
+            var val = $('#q').val();
+            $('img').each(function(idx, ele) {
+                if ($(ele).attr('data').search(val) != -1) {
+                    $(ele).show();
+                } 
+                else {
+                    $(ele).hide();
+                }
+            });
+        }
+        else {
+            $('img').each(function(idx, ele) {
+                $(ele).show();
+            });
+        }
+    });
+});
+</script>
+
+</head>
+<body>
+<div class="main1"><input class="search" type="text" id="q" onkeypress="return captureKeys(event);" placeholder="搜索" ></div>
+
+<a class="uimg" hfre="http://sun.soso021.com/img/smg001.gif"><img src="http://sun.soso021.com/img/smg001.gif" data="你傻逼啊" /></a>
+<a hfre="http://sun.soso021.com/img/smg002.gif"><img src="http://sun.soso021.com/img/smg002.gif" data="抱抱" /></a>
+<a hfre="http://sun.soso021.com/img/smg003.gif"><img src="http://sun.soso021.com/img/smg003.gif" data="你说什么" /></a>
+<a hfre="http://sun.soso021.com/img/smg004.gif"><img src="http://sun.soso021.com/img/smg004.gif" data="亲亲" /></a>
+<a hfre="http://sun.soso021.com/img/smg005.gif"><img src="http://sun.soso021.com/img/smg005.gif" data="最可爱了" /></a>
+<a hfre="http://sun.soso021.com/img/smg006.gif"><img src="http://sun.soso021.com/img/smg006.gif" data="你不能这样子做哦" /></a>
+<a hfre="http://sun.soso021.com/img/smg007.gif"><img src="http://sun.soso021.com/img/smg007.gif" data="好次" /></a>
+<a hfre="http://sun.soso021.com/img/smg008.jpg"><img src="http://sun.soso021.com/img/smg008.jpg" data="因为我很酷" /></a>
+<a hfre="http://sun.soso021.com/img/smg009.jpg"><img src="http://sun.soso021.com/img/smg009.jpg" data="可我没想到" /></a>
+<a hfre="http://sun.soso021.com/img/smg010.gif"><img src="http://sun.soso021.com/img/smg010.gif" data="我不听" /></a>
+<a hfre="http://sun.soso021.com/img/smg011.gif"><img src="http://sun.soso021.com/img/smg011.gif" data="亲亲" /></a>
+<a hfre="http://sun.soso021.com/img/smg012.jpg"><img src="http://sun.soso021.com/img/smg012.jpg" data="起晚被骂" /></a>
+<a hfre="http://sun.soso021.com/img/smg013.jpg"><img src="http://sun.soso021.com/img/smg013.jpg" data="宅在家被骂" /></a>
+<a hfre="http://sun.soso021.com/img/smg014.jpg"><img src="http://sun.soso021.com/img/smg014.jpg" data="出去玩被骂" /></a>
+
+<a href="http://lab.grapeot.me/xiong/imgs/105.jpg"><img src="http://lab.grapeot.me/xiong/imgs/105.jpg" data="" /></a>
+<a href="http://lab.grapeot.me/xiong/imgs/112.jpg"><img src="http://lab.grapeot.me/xiong/imgs/112.jpg" data="" /></a>
+<a href="http://lab.grapeot.me/xiong/imgs/114.jpg"><img src="http://lab.grapeot.me/xiong/imgs/114.jpg" data="" /></a>
+<a href="http://lab.grapeot.me/xiong/imgs/1145.jpg"><img src="http://lab.grapeot.me/xiong/imgs/1145.jpg" data="目瞪口呆" /></a>
+<a href="http://lab.grapeot.me/xiong/imgs/1146.jpg"><img src="http://lab.grapeot.me/xiong/imgs/1146.jpg" data="我就静静地看你们装逼" /></a>
+<a href="http://lab.grapeot.me/xiong/imgs/1148.jpg"><img src="http://lab.grapeot.me/xiong/imgs/1148.jpg" data="好无聊" /></a>
+<a href="http://lab.grapeot.me/xiong/imgs/1159.jpg"><img src="http://lab.grapeot.me/xiong/imgs/1159.jpg" data="大爷来玩儿嘛" /></a>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e29cabdf029fd6a5a3b9b99aaf384434";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
